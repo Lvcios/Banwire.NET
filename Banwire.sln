@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banwire", "Banwire\Banwire.csproj", "{ED142C27-4A68-4960-A807-8C4A215141F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banwire35", "Banwire35\Banwire35.csproj", "{8FB14E6D-495A-4586-9695-F0F23BF06AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanwireWeb", "BanwireWeb\BanwireWeb.csproj", "{FF788073-DD5B-4A33-9EE5-98869A7263DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED142C27-4A68-4960-A807-8C4A215141F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED142C27-4A68-4960-A807-8C4A215141F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED142C27-4A68-4960-A807-8C4A215141F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED142C27-4A68-4960-A807-8C4A215141F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FB14E6D-495A-4586-9695-F0F23BF06AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FB14E6D-495A-4586-9695-F0F23BF06AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FB14E6D-495A-4586-9695-F0F23BF06AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FB14E6D-495A-4586-9695-F0F23BF06AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF788073-DD5B-4A33-9EE5-98869A7263DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF788073-DD5B-4A33-9EE5-98869A7263DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF788073-DD5B-4A33-9EE5-98869A7263DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF788073-DD5B-4A33-9EE5-98869A7263DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
