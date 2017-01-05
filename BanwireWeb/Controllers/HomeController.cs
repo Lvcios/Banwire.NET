@@ -53,18 +53,41 @@ namespace BanwireWeb.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult OnDemandPayment()
         {
-            ViewBag.Message = "Your application description page.";
+            OnDemandPayment payment = new OnDemandPayment
+            {
+                method = "payment",
+                amount = 10,
+                reference = "payment-demo-01",
+                token = "crd.4PYjBFbd1qg9CD8huWVFQDdtsdassd",
+                user = "pruebasbw"
+            };
+            return View(payment);
+        }
+
+        [HttpPost]
+        public ActionResult OnDemandPayment(OnDemandPayment model)
+        {
+
+            string endPoint = "https://cr.banwire.com/";
+            string responseString = "";
+            string data = model.ToHtmlQueryString();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(endPoint);
+                Task<HttpResponseMessage> response = client.PostAsync("?action=card", new StringContent(data.ToString(), Encoding.UTF8, "application/x-www-form-urlencoded"));
+                if (response.Result.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    responseString = response.Result.Content.ReadAsStringAsync().Result;
+                }
+            }
+
+            ViewBag.ResponseString = responseString;
 
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+        
     }
 }
